@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="380dp"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrateur.gridlayout.MainActivity"
+
+    android:layout_gravity="center"
+    android:columnCount="4"
+    >
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_columnSpan="4"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="30sp"
+        android:text="0"
+
+        />
+
+    <Button
+        android:id="@+id/but7"
+        android:text="7"
+        style="@style/Touche"
+
+        />
+
+    <Button
+        android:id="@+id/but8"
+        style="@style/Touche"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/but9"
+        style="@style/Touche"
+        android:text="9" />
+
+    <Button
+        android:id="@+id/diviser"
+        style="@style/Touche_operation"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/but4"
+        style="@style/Touche"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/but5"
+        style="@style/Touche"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/but6"
+        style="@style/Touche"
+        android:text="6" />
+
+    <Button
+    android:id="@+id/mult"
+        style="@style/Touche_operation"
+    android:text="*" />
+
+    <Button
+        android:id="@+id/but1"
+        style="@style/Touche"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/but2"
+        style="@style/Touche"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/but3"
+        style="@style/Touche"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/moins"
+        style="@style/Touche_operation"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/point"
+        style="@style/Touche"
+        android:text="." />
+    <Button
+        android:id="@+id/but0"
+        style="@style/Touche"
+        android:text="0" />
+    <Button
+        android:id="@+id/egal"
+        style="@style/Touche_operation"
+        android:text="="
+        android:onClick="toucheEgal"/>
+    <Button
+        android:id="@+id/plus"
+        style="@style/Touche_operation"
+        android:text="+" />
+
+    <Button
+    android:id="@+id/clear"
+    style="@style/Touche_operation"
+     android:onClick="clear"
+    android:text="C" />
+
+</GridLayout>
